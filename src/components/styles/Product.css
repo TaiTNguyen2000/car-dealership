@@ -1,0 +1,101 @@
+.product {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+}
+
+.product__video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.product__info {
+  display: flex;
+  flex-direction: column;
+  height: 360px;
+  position: relative;
+  width: 100%;
+}
+
+.product__infoText {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.product__infoText > h1 {
+  color: white;
+  font-weight: 500;
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+
+.product__infoText > h4 {
+  font-weight: 400;
+  font-size: 15px;
+  color: white;
+}
+
+.product__infoText > h4 > span {
+  padding-bottom: 4px;
+  padding-top: 15px;
+  border-bottom: 2px solid white;
+  color: white;
+  transition: 0.3s;
+}
+
+.product__infoText > h4 > span:hover {
+  border-bottom-width: 3px;
+  font-size: 17px;
+}
+
+.product__actions {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product__actions > button {
+  cursor: pointer;
+  border: none;
+  width: 260px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-weight: 600;
+  outline: none;
+}
+
+.product__buttonPrimary {
+  background-color: #393c41;
+  color: white;
+  opacity: 0.9;
+}
+
+.product__buttonSecondary {
+  background-color: #fff;
+  color: black;
+  opacity: 0.8;
+}
+
+@media (max-width: 675px) {
+  .product__actions {
+    flex-direction: column;
+    place-items: center;
+  }
+}
